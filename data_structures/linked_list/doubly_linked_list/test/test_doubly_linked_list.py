@@ -1,4 +1,4 @@
-from doubly_linked_list import DoublyLinkedList
+from data_structures.linked_list import DoublyLinkedList
 
 
 def test_prepend():
