@@ -1,6 +1,6 @@
 import pytest
 
-from singly_linked_list import SinglyLinkedList
+from data_structures.linked_list import SinglyLinkedList
 
 
 def test_append():
@@ -15,6 +15,16 @@ def test_append():
     assert head.get_next().get_value() == 2
     assert head.get_next().get_next().get_value() == 3
     assert head.get_next().get_next().get_next() is None
+
+
+def test_init():
+    items = [1, 2, 3]
+    sll = SinglyLinkedList(items)
+
+    current = sll.get_head()
+    for item in items:
+        assert current.get_value() == item
+        current = current.get_next()
 
 
 def test_get_head():

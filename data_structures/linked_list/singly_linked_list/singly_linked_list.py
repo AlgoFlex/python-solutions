@@ -1,10 +1,13 @@
-from singly_linked_list_node import Node
+from .singly_linked_list_node import SinglyLinkedListNode
 
 
 class SinglyLinkedList:
-    def __init__(self):
+    def __init__(self, items=[]):
         self._head = None
         self._size = 0
+
+        for item in items:
+            self.append(item)
 
     def __len__(self):
         return self._size
@@ -26,7 +29,7 @@ class SinglyLinkedList:
         return self.size == 0
 
     def append(self, value):
-        new_node = Node(value)
+        new_node = SinglyLinkedListNode(value)
 
         if self._head is None:
             self._head = new_node
@@ -41,7 +44,7 @@ class SinglyLinkedList:
         self._size += 1
 
     def prepend(self, value):
-        self._head = Node(value, self._head)
+        self._head = SinglyLinkedListNode(value, self._head)
         self._size += 1
 
     def find(self, target):
@@ -71,7 +74,7 @@ class SinglyLinkedList:
             self.append(value)
             return
 
-        new_node = Node(value)
+        new_node = SinglyLinkedListNode(value)
         current_node = self._head
         prev_node = None
         while index >= 0:
