@@ -14,7 +14,7 @@ Output: -1
 """
 
 
-def binary_search(nums, target):
+def binary_search_iterative(nums, target):
     size = len(nums)
     left = 0
     right = size - 1
