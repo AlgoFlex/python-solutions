@@ -1,6 +1,6 @@
 import pytest
 
-from linked_lists.swap_elements import Solution
+from linked_lists.swap_nodes import Solution
 from data_structures.linked_list import SinglyLinkedList
 
 
@@ -9,7 +9,7 @@ def test_swap_elements_01():
 
     head_node = sll.get_head()
 
-    assert Solution.swap_elements(head_node, 2, 4) is None
+    assert Solution.swap_nodes(head_node, 2, 4) is None
 
 
 def test_swap_nodes_02():
