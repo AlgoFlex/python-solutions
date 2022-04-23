@@ -1,11 +1,14 @@
-from doubly_linked_list_node import DoublyLinkedListNode
+from .doubly_linked_list_node import DoublyLinkedListNode
 
 
 class DoublyLinkedList:
-    def __init__(self):
+    def __init__(self, items=[]):
         self._head = None
         self._tail = None
         self._size = 0
+
+        for item in items:
+            self.append(item)
 
     def __len__(self):
         return self._size
