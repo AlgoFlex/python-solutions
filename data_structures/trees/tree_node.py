@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import TypeVar, Generic, Union
 
 T = TypeVar('T')
@@ -12,13 +13,19 @@ class TreeNode(Generic[T]):
     def get_value(self) -> Union[T, None]:
         return self._value
 
+    def get_left(self) -> Union[TreeNode, None]:
+        return self._left
+
+    def get_right(self) -> Union[TreeNode, None]:
+        return self._right
+
     def set_value(self, value: Union[T, None] = None) -> None:
         self._value = value
 
-    def set_left_child(self, value: Union[T, None] = None) -> None:
+    def set_left(self, value: Union[T, None] = None) -> None:
         self._left = TreeNode(value)
 
-    def set_right_child(self, value: Union[T, None] = None) -> None:
+    def set_right(self, value: Union[T, None] = None) -> None:
         self._right = TreeNode(value)
 
     def has_left_child(self) -> bool:
