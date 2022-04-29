@@ -6,8 +6,8 @@ T = TypeVar('T')
 class TreeNode(Generic[T]):
     def __init__(self, value: Union[T, None] = None) -> None:
         self._value = value
-        self._left = None
-        self._right = None
+        self._left: Union[TreeNode, None] = None
+        self._right: Union[TreeNode, None] = None
 
     def get_value(self) -> Union[T, None]:
         return self._value
@@ -26,6 +26,3 @@ class TreeNode(Generic[T]):
 
     def has_right_child(self) -> bool:
         return self._right is not None
-
-
-
