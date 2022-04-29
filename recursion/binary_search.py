@@ -14,7 +14,7 @@ Output: -1
 """
 
 
-def binary_search_recursive(nums, target):
+def binary_search(nums, target):
     size = len(nums)
     left = 0
     right = size - 1
