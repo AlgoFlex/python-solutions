@@ -12,7 +12,7 @@ def inorder_traversal(root: TreeNode[T]) -> List[T]:
     return result
 
 
-def _inorder_traversal_util(result: List[T], node: TreeNode[T]):
+def _inorder_traversal_util(result: List[T], node: TreeNode[T]) -> None:
     if node is None:
         return
 

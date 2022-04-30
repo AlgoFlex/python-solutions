@@ -12,7 +12,7 @@ def pre_order_traversal(root: TreeNode[T]) -> List[T]:
     return result
 
 
-def _pre_order_util(result: List[T], node: TreeNode[T]):
+def _pre_order_util(result: List[T], node: TreeNode[T]) -> None:
     if node is None:
         return
 
