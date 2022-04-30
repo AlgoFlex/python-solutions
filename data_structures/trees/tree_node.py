@@ -22,11 +22,17 @@ class TreeNode(Generic[T]):
     def set_value(self, value: Union[T, None] = None) -> None:
         self._value = value
 
-    def set_left(self, value: Union[T, None] = None) -> None:
-        self._left = TreeNode(value)
+    def set_left(self, value: Union[TreeNode[T], T, None] = None) -> None:
+        if isinstance(value, TreeNode):
+            self._left = value
+        else:
+            self._left = TreeNode(value)
 
-    def set_right(self, value: Union[T, None] = None) -> None:
-        self._right = TreeNode(value)
+    def set_right(self, value: Union[TreeNode[T], T, None] = None) -> None:
+        if isinstance(value, TreeNode):
+            self._right = value
+        else:
+            self._right = TreeNode(value)
 
     def has_left_child(self) -> bool:
         return self._left is not None
