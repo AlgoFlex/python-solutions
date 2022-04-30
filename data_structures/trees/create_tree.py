@@ -1,11 +1,11 @@
 from __future__ import annotations
 from typing import TypeVar, List
-from data_structures.trees import Tree
+from data_structures.trees import Tree, TreeNode
 
 T = TypeVar('T')
 
 
-def create_tree(arr: List[T]):
+def create_tree(arr: List[T]) -> TreeNode[T]:
     return _create_tree_util(arr, 0)
 
 
