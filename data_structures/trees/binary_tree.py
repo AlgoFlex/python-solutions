@@ -5,7 +5,7 @@ from data_structures.trees import TreeNode
 T = TypeVar('T')
 
 
-class Tree(Generic[T]):
+class BinaryTree(Generic[T]):
     def __init__(self, value: Union[T, None] = None):
         self._root = TreeNode(value)
 

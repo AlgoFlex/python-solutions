@@ -1,7 +1,7 @@
 from data_structures.trees import create_tree, pre_order_traversal
 
 
-def test_pre_order():
+def test_pre_order_traversal():
     arr = [6, 4, 8, 2, 5, 7, 9, 1, 3]
     root = create_tree(arr)
 
