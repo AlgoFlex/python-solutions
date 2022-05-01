@@ -1,4 +1,4 @@
-from data_structures.linked_list import SinglyLinkedListNode
+from data_structures.node import SinglyLinkedListNode
 
 
 class Queue:

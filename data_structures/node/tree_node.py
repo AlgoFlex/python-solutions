@@ -29,8 +29,8 @@ class TreeNode(Node[T]):
         else:
             self._right = TreeNode(value)
 
-    def has_left_child(self) -> bool:
+    def has_left(self) -> bool:
         return self._left is not None
 
-    def has_right_child(self) -> bool:
+    def has_right(self) -> bool:
         return self._right is not None
