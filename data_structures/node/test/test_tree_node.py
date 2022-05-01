@@ -1,4 +1,4 @@
-from data_structures.trees import TreeNode
+from data_structures.node import TreeNode
 
 
 def test_get_value():
@@ -13,16 +13,6 @@ def test_get_value():
     assert node.get_value() == 1
     assert node._left is None
     assert node._right is None
-
-
-def test_set_value():
-    node = TreeNode()
-
-    assert node.get_value() is None
-
-    node.set_value(1)
-
-    assert node.get_value() == 1
 
 
 def test_get_and_set_left_and_right_child():

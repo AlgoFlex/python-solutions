@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import TypeVar, Generic, Union
-from data_structures.trees import TreeNode
+from data_structures.node import TreeNode
 
 T = TypeVar('T')
 

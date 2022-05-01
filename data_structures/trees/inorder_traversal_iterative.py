@@ -1,6 +1,6 @@
 from __future__ import annotations
 from typing import List, TypeVar
-from data_structures.trees import TreeNode
+from data_structures.node import TreeNode
 from data_structures.stacks import Stack
 
 T = TypeVar('T')

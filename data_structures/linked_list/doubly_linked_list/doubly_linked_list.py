@@ -1,4 +1,4 @@
-from .doubly_linked_list_node import DoublyLinkedListNode
+from data_structures.node.doubly_linked_list_node import DoublyLinkedListNode
 
 
 class DoublyLinkedList:
