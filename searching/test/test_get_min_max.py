@@ -1,5 +1,4 @@
 import random
-
 from searching.get_min_max import get_min_max
 
 
