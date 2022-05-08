@@ -24,3 +24,4 @@ T = TypeVar('T')
 
 def intersection(head_1: SinglyLinkedList[T], head_2: SinglyLinkedListNode[T]) -> SinglyLinkedList[T]:
     pass
+
