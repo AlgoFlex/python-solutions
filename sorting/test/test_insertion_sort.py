@@ -12,3 +12,9 @@ def test_insertion_sort():
     insertion_sort(nums)
 
     assert nums == exp
+
+    nums = [31, 41, 59, 26, 41, 58]
+    exp = [26, 31, 41, 41, 58, 59]
+    insertion_sort(nums)
+
+    assert nums == exp
